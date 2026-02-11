@@ -1,2 +1,23 @@
 # promptlab
-Write prompt test cases in YAML, run them against multiple models via Ollama, compare outputs with assertions. Like pytest but for prompts. Catch regressions when you change system prompts.
+
+LLM prompt testing framework. Write test cases in YAML, run against Ollama models.
+
+## Install
+
+```bash
+pip install promptlab
+```
+
+## Usage
+
+```bash
+promptlab run tests/
+promptlab run tests/ --model llama3.2
+```
+
+## Testing
+
+```bash
+pip install -e .
+pytest -v
+```
