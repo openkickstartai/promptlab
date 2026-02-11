@@ -2,10 +2,12 @@
 
 LLM prompt testing framework. Write test cases in YAML, run against Ollama models.
 
-## Install
+## Install from source
 
 ```bash
-pip install promptlab
+git clone https://github.com/openkickstartai/promptlab.git
+cd promptlab
+pip install -e .
 ```
 
 ## Usage
@@ -18,6 +20,6 @@ promptlab run tests/ --model llama3.2
 ## Testing
 
 ```bash
-pip install -e .
+pip install pytest
 pytest -v
 ```
